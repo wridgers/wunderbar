@@ -1,0 +1,13 @@
+{
+  "name": "wunderbar",
+  "version": "0.1",
+  "description": "Simple interface for the wunderground API.",
+  "keywords": ["wunderground", "forecast", "weather"],
+  "author": "Will Ridgers <will@mindfuzz.net>",
+  "repository": { "type": "git", "url": "git@github.com:wridgers/wunderbar.git" },
+  "main": "./index",
+  "engines": { "node": ">= 0.8.0" },
+  "dependencies": {
+    "superagent": ">= 0.7.0"
+  }
+}
