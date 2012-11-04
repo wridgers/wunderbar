@@ -55,8 +55,9 @@ wunderbar.prototype.webcams = function(query, callback) { this.get('webcams', qu
 wunderbar.prototype.yesterday = function(query, callback) { this.get('yesterday', query, callback); };
 
 // AutoComplete API
+/*
 wunderbar.prototype.autocomplete = function(query, callback) {
-    throw 'Sorry, not yet implemented.';
 };
+*/
 
 module.exports = wunderbar;

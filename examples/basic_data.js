@@ -1,5 +1,5 @@
-var wunder  = require('wunderbar');
-var weather = new wunder('yourapikey');
+var wunderbar   = require('wunderbar');
+var weather     = new wunderbar('yourapikey');
 
 // weather alerts, geolocate from ip address
 weather.alerts('autoip', function(err, res) {

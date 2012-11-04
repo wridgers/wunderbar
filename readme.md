@@ -1,9 +1,12 @@
 # wunderbar
-A simple node.js interface to the [Wunderground](http://www.wunderground.com/weather/api/d/docs) API.
+A simple node.js interface to the [Wunderground](http://www.wunderground.com/weather/api/d/docs) weather API.
 
+Currently working
 * Full implementation of Wunderground Data API
-* Layers (Rader, Satellite, and both)
 * Multiple langauge support
+
+Work in progress
+* Layers (Rader, Satellite, and both)
 * AutoComplete API
 * Icon URL interface
 
@@ -16,10 +19,9 @@ Don't forget to obtain an API key from [here](http://www.wunderground.com/weathe
 ## Usage
 ```js
 
-var wunder  = require('wunderbar');
-var weather = new wunder('yourapikey');
+var wunderbar = require('wunderbar');
+var weather   = new wunderbar('yourapikey');
 
-// current conditions
 weather.conditions('B19 1AS', function(err, res) {
     console.log(res);
 });
