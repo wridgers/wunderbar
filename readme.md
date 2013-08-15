@@ -18,14 +18,12 @@ Don't forget to obtain an API key from [here](http://www.wunderground.com/weathe
 
 ## Usage
 ```js
-
 var wunderbar = require('wunderbar');
 var weather   = new wunderbar('yourapikey');
 
 weather.conditions('B19 1AS', function(err, res) {
     console.log(res);
 });
-
 ```
 
 See *examples/* for more detailed usage examples.

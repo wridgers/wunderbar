@@ -13,7 +13,10 @@ function wunderbar(apikey, lang) {
 wunderbar.prototype.get = function(api, query, callback) {
     var url = encodeURI('http://api.wunderground.com/api/' + this.apikey + '/' + api + '/lang:' + this.lang + '/q/' + query + '.json');
 
-    request.get(url).end(function(err, res) {
+    request
+      .get(url)
+      .set('Accept-Encoding', '')
+      .end(function(err, res) {
         var obj = [];
         if (!err) {
             try {
